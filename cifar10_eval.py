@@ -45,11 +45,11 @@ import cifar10
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.app.flags.DEFINE_string('eval_dir', R'/Users/ponnanas/Downloads/Week12HW9-4/cifar10/part1/eval',
+tf.app.flags.DEFINE_string('eval_dir', '/Users/ponnanas/Downloads/Week12HW9-4/cifar10/part1/eval',
                            """Directory where to write event logs.""")
 tf.app.flags.DEFINE_string('eval_data', 'test',
                            """Either 'test' or 'train_eval'.""")
-tf.app.flags.DEFINE_string('checkpoint_dir', R'/Users/ponnanas/Downloads/Week12HW9-4/cifar10/part1/logs',
+tf.app.flags.DEFINE_string('checkpoint_dir', '/tmp/cifar10_eval',
                            """Directory where to read model checkpoints.""")
 tf.app.flags.DEFINE_integer('eval_interval_secs', 20,
                             """How often to run the eval.""")
